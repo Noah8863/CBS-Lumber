@@ -9,7 +9,7 @@ function App() {
         <Route exact path="/" element={
         <>
           <img id="under-construction" src={underConstruction} />
-          <a href="http://coloradobuildingsolutions.com/" target="_blank"><button class="noselect"></button></a>
+          <a href="http://coloradobuildingsolutions.com/" target="_blank" rel="noreferrer"><button class="noselect"></button></a>
         </>
       }></Route>
       </Routes>
