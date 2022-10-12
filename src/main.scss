@@ -1,7 +1,7 @@
 #under-construction {
   position: relative;
   display: flex;
-  top: 300px;
+  top: 200px;
   justify-content: center;
   margin: auto;
   z-index: 999;
@@ -24,9 +24,9 @@ button:before {
 }
 
 button {
-    position: relative;
-    margin: auto;
-    top: 400px;
+  position: relative;
+  margin: auto;
+  top: 300px;
   width: 250px;
   height: 50px;
   cursor: pointer;
