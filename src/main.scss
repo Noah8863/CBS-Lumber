@@ -1,8 +1,7 @@
 body {
-  background-image: url(./images/wood-background.png);
+  // background-image: url(./images/wood-background.png);
   background-size: cover;
   width:auto;
-  z-index: 990;
 }
 #under-construction {
   position: relative;
@@ -10,7 +9,6 @@ body {
   top: 200px;
   justify-content: center;
   margin: auto;
-  z-index: 990;
   width: 60%;
 }
 .noselect {
