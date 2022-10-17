@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.scss";
 import logo from "../../images/CBS-Lumber-Logo.png";
-import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
 function NavBar() {
   return (
@@ -34,12 +34,17 @@ function NavBar() {
         <div id="navbar-contact-container">
           <div id="left-contact">
             <p>Call Us Today!</p>
-            <a id="phone-number" href="tel:7207561299">
+            <a className="phone-number" href="tel:7207561299">
               <p>(720) 756 1299</p>
             </a>
           </div>
           <div id="right-contact">
-                <PhoneInTalkIcon id="phone-icon" fontSize="large"/>
+            <a className="phone-number" href="tel:7207561299">
+              <PhoneInTalkIcon
+                id="phone-icon"
+                fontSize="large"
+              ></PhoneInTalkIcon>
+            </a>
           </div>
         </div>
       </nav>
