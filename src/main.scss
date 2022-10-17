@@ -1,10 +1,17 @@
+body {
+  background-image: url(./images/wood-background.png);
+  background-size: cover;
+  width:auto;
+  z-index: 990;
+}
 #under-construction {
   position: relative;
   display: flex;
   top: 200px;
   justify-content: center;
   margin: auto;
-  z-index: 999;
+  z-index: 990;
+  width: 60%;
 }
 .noselect {
   -webkit-touch-callout: none;
@@ -63,4 +70,18 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+@media screen and (max-width: 450px) {
+  #under-construction {
+    width: 100%;
+  }
+  button {
+    width: 200px;
+    height: 40px;
+  }
+  button::before {
+    width: 200px;
+    height: 40px;
+  }
 }
