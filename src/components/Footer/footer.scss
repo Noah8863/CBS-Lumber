@@ -3,7 +3,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  background-color: rgb(71, 70, 70);
+  background-color: #303535;
   color: white;
   text-align: center;
   align-items: center;
@@ -15,11 +15,13 @@
 .contactInfo {
   position: relative;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 25% 25% 25% 25%;
   align-items: center;
   width: 100%;
 }
-
+#logoContainer {
+    margin: 0;
+}
 .footerHeaders {
   margin-top: 10px;
 }
