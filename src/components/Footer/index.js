@@ -3,7 +3,7 @@ import "./footer.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
-import ForestIcon from "@mui/icons-material/Forest";
+import CabinIcon from '@mui/icons-material/Cabin';
 import footerLogo from "../../images/CBSL-Footer-logo-white.png";
 
 function Footer() {
@@ -25,11 +25,12 @@ function Footer() {
       },
     },
     {
-      name: "CBS Lumber",
-      link: "https://novanational.com/",
+      // TODO: Ask about naming conventions here. CBS or full name?
+      name: "CBS",
+      link: "http://coloradobuildingsolutions.com",
       id: "cbs-lumber",
       icon: function () {
-        return <ForestIcon />;
+        return <CabinIcon />;
       },
     },
     {
@@ -48,7 +49,7 @@ function Footer() {
           <img src={footerLogo} id="footerLogo" alt="footerLogo" />
         </div>
         <div>
-          <h4 id="officeHours">Office Hours</h4>
+          <h3 className="footerHeaders">Office Hours</h3>
           <p>8:00am - 3:00pm</p>
         </div>
         <div id="addressContainer">
