@@ -28,6 +28,24 @@ function Info() {
           </div>
         </div>
       </div>
+
+      <div id="lumber-info-container">
+        <div id="lumber-info-card">
+          <p>
+            When you work with CBS Lumber, you get more than high quality
+            lumber, though that is our main product. We are dedicated to
+            outstanding customer service to make sure our customers feel
+            understood and that all their needs are met. Our team at Colorado
+            Building Solutions is prepared with the knowledge and understanding
+            of construction, and meeting needs of our customers in our highest
+            priority. Whether it comes to framing, new construction, or
+            renovations, we have the lumber supply to get your commerical
+            project moving quickly and on budget.
+          </p>
+          <h1 id="lumber-info-header">LUMBER BUILT ON VALUES</h1>
+        </div>
+      </div>
+
       <div className="main-info-container">
         <div className="info-containers">
           <div className="info-cards">

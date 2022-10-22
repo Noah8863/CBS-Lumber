@@ -3,6 +3,7 @@ import underConstruction from '../src/images/under-construction.png'
 import NavBar from './components/Navbar/index'
 import Footer from './components/Footer/index'
 import Info from './components/Info/index'
+import Certifications from './components/Certification/index'
 import "./main.scss";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Info />
           {/* <img id="under-construction" src={underConstruction} />
           <a href="http://coloradobuildingsolutions.com/" target="_blank" rel="noreferrer"><button class="noselect"></button></a> */}
+        <Certifications />
         </>
       }></Route>
       </Routes>

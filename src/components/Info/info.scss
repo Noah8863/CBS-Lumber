@@ -31,8 +31,39 @@
     font-size: 18px;
     padding: 10px;
 }
-.card-header{
+.card-header {
     border-right: 4px solid black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#lumber-info-container {
+    position: relative;
+    display: flex;
+    padding: 30px;
+}
+#lumber-info-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    height: 250px;
+    text-align: center;
+}
+#lumber-info-card p {
+    font-size: 18px;
+    padding: 25px;
+    background-color: rgba(177, 177, 177, 0.8);
+    margin-right: 10px;
+}
+#lumber-info-card h1 {
+    font-size: 38px;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    border-left: 3px solid black;
 }
 
 @media screen and (max-width: 700px) {}

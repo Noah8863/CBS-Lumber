@@ -1,0 +1,32 @@
+#cert-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: rgb(42, 42, 42);
+    justify-content: center;
+}
+#cert-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: red;
+}
+#cert-card h1 {
+    font-size: 18px;
+    border-right: 4px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#greenguard-img {
+    display: block;
+    margin: 20px;
+    width: 30%;
+}
+#usda-img {
+    display: block;
+    margin: 20px;
+    width: 70%;
+}
