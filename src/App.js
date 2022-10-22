@@ -4,6 +4,7 @@ import NavBar from './components/Navbar/index'
 import Footer from './components/Footer/index'
 import Info from './components/Info/index'
 import Certifications from './components/Certification/index'
+import ContactCard from './components/Contact-Card/index'
 import "./main.scss";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           {/* <img id="under-construction" src={underConstruction} />
           <a href="http://coloradobuildingsolutions.com/" target="_blank" rel="noreferrer"><button class="noselect"></button></a> */}
         <Certifications />
+        <ContactCard />
         </>
       }></Route>
       </Routes>

@@ -1,0 +1,17 @@
+#contact-card-container {
+    position: relative;
+    display: flex;
+    background-color: red;
+}
+#contact-card {
+    position: relative;
+    float: left;
+    margin: 10px;
+    background-color: rgba(178, 176, 176, 0.614);
+    color: white;
+    text-align: center;
+}
+#contact-card a {
+    color: white;
+    text-decoration: none;
+}

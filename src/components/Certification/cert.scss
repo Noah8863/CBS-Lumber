@@ -12,21 +12,25 @@
     padding: 20px;
     color: white;
     text-align: center;
-    background-color: red;
+    margin: auto;
+    align-items: center;
 }
 #cert-card h1 {
-    font-size: 18px;
+    font-size: 38px;
     border-right: 4px solid white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#cert-imgs {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 #greenguard-img {
-    display: block;
     margin: 20px;
-    width: 30%;
+    width: 50%;
 }
 #usda-img {
-    display: block;
     margin: 20px;
-    width: 70%;
+    width: 100%;
 }

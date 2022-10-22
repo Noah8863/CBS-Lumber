@@ -1,0 +1,41 @@
+#cert-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: rgb(42, 42, 42);
+  justify-content: center;
+}
+
+#cert-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+
+#cert-card h1 {
+  font-size: 38px;
+  border-right: 4px solid white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#cert-imgs {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+#greenguard-img {
+  margin: 20px;
+  width: 50%;
+}
+
+#usda-img {
+  margin: 20px;
+  width: 100%;
+}/*# sourceMappingURL=cert.css.map */
