@@ -1,9 +1,11 @@
 .main-info-container {
+    position: relative;
     display: flex;
-    width: auto;
+    width: 100%;
     margin: auto;
     background-color: grey;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .info-containers {
     position: relative;
@@ -22,7 +24,12 @@
     grid-template-columns: 30% 70%;
     text-align: center;
     align-items: center;
-    background-color: rgb(216,201,156, 0.8) ;
+    background-color: rgb(216,201,156, 0.8);
+    padding: 20px;
+}
+.info-cards p {
+    font-size: 18px;
+    padding: 10px;
 }
 .card-header{
     border-right: 4px solid black;
