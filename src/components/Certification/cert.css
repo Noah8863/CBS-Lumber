@@ -18,7 +18,7 @@
 }
 
 #cert-card h1 {
-  font-size: 38px;
+  font-size: 32px;
   border-right: 4px solid white;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -38,4 +38,12 @@
 #usda-img {
   margin: 20px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #cert-card h1 {
+    font-size: large;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }/*# sourceMappingURL=cert.css.map */

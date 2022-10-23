@@ -1,17 +1,30 @@
 #contact-card-container {
     position: relative;
     display: flex;
-    background-color: red;
+    background-image: url(../../images/fork-lift-img2.jpg);
+    background-size: auto;
+    padding: 30px;
+    // TODO: Figure out background size and position 
 }
 #contact-card {
     position: relative;
-    float: left;
+    float: right;
     margin: 10px;
-    background-color: rgba(178, 176, 176, 0.614);
+    background-color: rgba(178, 176, 176, 0.8);
     color: white;
     text-align: center;
+    padding: 80px;
 }
 #contact-card a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 508px) {
+    #contact-card {
+        padding: 10px;
+    }
+    #contact-card-container {
+        background-size:100% 400px;
+    }
 }
