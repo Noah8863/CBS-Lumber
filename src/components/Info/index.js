@@ -1,9 +1,10 @@
 import React from "react";
 import "./info.scss";
-
+import HeaderImg from '../../images/main-page-header1.jpg'
 function Info() {
   return (
     <>
+    <img id="header-img" src={HeaderImg} alt = "Wood Image"></img>
       <div className="main-info-container">
         <div className="info-containers">
           <div className="info-cards">
@@ -31,6 +32,7 @@ function Info() {
 
       <div id="lumber-info-container">
         <div id="lumber-info-card">
+        <h1 id="lumber-info-header-mobile">LUMBER BUILT ON VALUES</h1>
           <p>
             When you work with CBS Lumber, you get more than high quality
             lumber, though that is our main product. We are dedicated to
