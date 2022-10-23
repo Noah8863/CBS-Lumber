@@ -63,7 +63,7 @@
 #lumber-info-card p {
   font-size: 18px;
   padding: 25px;
-  background-color: rgba(177, 177, 177, 0.8);
+  background-color: rgba(177, 177, 177, 0.7);
   margin-right: 10px;
 }
 #lumber-info-card h1 {
@@ -93,6 +93,16 @@
   #lumber-info-card {
     display: block;
     height: auto;
+    width: auto;
+  }
+  #lumber-info-card h1 {
+    border-left: none;
+    border-bottom: 3px solid black;
+  }
+  #lumber-info-card p {
+    font-size: 18px;
+    padding: 15px;
+    margin-right: 0px;
   }
   #lumber-info-header-mobile {
     display: flex;

@@ -41,4 +41,12 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+    #cert-card {
+        display: block;
+    }
+    #cert-card h1 {
+        font-size: 32px;
+        border-right: none;
+        border-bottom: 3px solid white;
+    }
 }
