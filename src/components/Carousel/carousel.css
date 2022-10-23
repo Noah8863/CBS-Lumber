@@ -1,0 +1,15 @@
+.swiper {
+    position: relative;
+    display: flex;
+    width: 99vw;
+    height: auto;
+    bottom: 50px;
+}
+.swiper-pictures {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.swiper-pictures img {
+    width: 40%;
+}
