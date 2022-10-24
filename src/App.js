@@ -5,6 +5,7 @@ import Footer from "./components/Footer/index";
 import Info from "./components/Info/index";
 import Certifications from "./components/Certification/index";
 import ContactCard from "./components/Contact-Card/index";
+import Contact from "./components/Contact/index";
 import "./main.scss";
 
 function App() {
@@ -24,7 +25,12 @@ function App() {
               <ContactCard />
             </>
           }
-        ></Route>
+         />
+        <Route exact path="/contact" element={
+          <>
+            <Contact />
+          </>
+        } />
       </Routes>
       <Footer />
     </Router>

@@ -12,7 +12,7 @@ function NavBar() {
         </div>
         <div>
           <ul id="navbar-items">
-            <a>
+            <a href="/">
               <li className="navbar-containers">
                 <p>HOME</p>
               </li>
@@ -24,7 +24,7 @@ function NavBar() {
             </a>
             <a>
               <li className="navbar-containers">
-                <a>
+                <a href="/contact">
                   <p id="contact-btn">CONTACT US</p>
                 </a>
               </li>
