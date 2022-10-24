@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 import logo from "../../images/CBS-Lumber-Logo.png";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
@@ -12,23 +13,21 @@ function NavBar() {
         </div>
         <div>
           <ul id="navbar-items">
-            <a href="/">
+            <Link to="/">
               <li className="navbar-containers">
                 <p>HOME</p>
               </li>
-            </a>
-            <a>
+            </Link>
+            <Link>
               <li className="navbar-containers">
                 <p>PRODUCTS </p>
               </li>
-            </a>
-            <a>
+            </Link>
+            <Link to="/contact">
               <li className="navbar-containers">
-                <a href="/contact">
-                  <p id="contact-btn">CONTACT US</p>
-                </a>
+                <p id="contact-btn">CONTACT US</p>
               </li>
-            </a>
+            </Link>
           </ul>
         </div>
         <div id="navbar-contact-container">
