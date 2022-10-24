@@ -4,10 +4,10 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import emailjs from "@emailjs/browser";
 import Certification from "../Certification/index";
-const clientName = document.getElementById("name")
-const email = document.getElementById("email")      
-const subject = document.getElementById("subject")
-const message = document.getElementById("message")
+const clientName = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
 
 function Contact() {
   const sendEmail = (e) => {
@@ -45,7 +45,7 @@ function Contact() {
   };
 
   function showMessage() {
-    alert("Message has been recorded! We'll get in touch soon")
+    alert("Message has been recorded! We'll get in touch soon");
   }
 
   return (
@@ -53,7 +53,7 @@ function Contact() {
       <div id="contact-form-container">
         <div id="left-contact-container">
           <div id="left-contact-details">
-          <h1>CONTACT US</h1>
+            <h1>CONTACT US</h1>
             <p>
               CBS Lumber is dedicated to offering you the best experince,
               products, and quality at an affordable price.
@@ -101,7 +101,23 @@ function Contact() {
           </p>
           <div className="checkboxform field">
             <h4>Products of Interest*</h4>
-            <label>
+            <div id="checklist">
+              <input id="01" type="checkbox" value="1" />
+              <label for="01">Lumber</label>
+
+              <input id="02" type="checkbox" value="2" />
+              <label for="02">OSB</label>
+
+              <input id="03" type="checkbox" value="3" />
+              <label for="03">Plywood/Veneer</label>
+
+              <input id="04" type="checkbox" value="4" />
+              <label for="04">I Joists</label>
+
+              <input id="05" type="checkbox" value="5" />
+              <label for="05">LSL</label>
+            </div>
+            {/* <label>
               <input type="checkbox" className="checkboxOptions" id="lumber" />
               Lumber
             </label>
@@ -116,7 +132,7 @@ function Contact() {
             <label>
               <input type="checkbox" className="checkboxOptions" id="lsl" />
               LSL
-            </label>
+            </label> */}
           </div>
           <p type="Message:">
             <input
