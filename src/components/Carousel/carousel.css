@@ -13,3 +13,14 @@
 .swiper-pictures img {
     width: 40%;
 }
+@media screen and (max-width:550px){
+    .swiper-pictures img {
+        width: 100%;
+    }
+    .swiper {
+        bottom: 90px;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
