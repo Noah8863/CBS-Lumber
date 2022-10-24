@@ -1,9 +1,13 @@
 import React from "react";
 import "./contact.scss";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PersonIcon from "@mui/icons-material/Person";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import EmailIcon from "@mui/icons-material/Email";
 import emailjs from "@emailjs/browser";
+import Certification from "../Certification/index";
+const clientName = document.getElementById("name")
+const email = document.getElementById("email")      
+const subject = document.getElementById("subject")
+const message = document.getElementById("message")
 
 function Contact() {
   const sendEmail = (e) => {
@@ -14,6 +18,11 @@ function Contact() {
       time: today,
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
+      phoneNumber: document.getElementById("phoneNumber").value,
+      lumber: document.getElementById("lumber").checked ? "Yes ✅" : "No ❌",
+      plywood: document.getElementById("plywood").checked ? "Yes ✅" : "No ❌",
+      osb: document.getElementById("osb").checked ? "Yes ✅" : "No ❌",
+      lsl: document.getElementById("lsl").checked ? "Yes ✅" : "No ❌",
       subject: document.getElementById("subject").value,
       message: document.getElementById("message").value,
     };
@@ -21,7 +30,7 @@ function Contact() {
     emailjs
       .send(
         "service_32wky28",
-        "template_6f7vqrr",
+        "template_s77x9a4",
         formData,
         "nIOQ4DjOD6VPrQRy0"
       )
@@ -36,47 +45,102 @@ function Contact() {
   };
 
   function showMessage() {
-    alert("Thanks for reaching out! Ill be sure to get back to you soon.");
+    alert("Message has been recorded! We'll get in touch soon")
   }
 
   return (
-    <main>
-      {/* <form className="inputContainer" onSubmit={sendEmail}> */}
-      <form className="inputContainer">
-        <h2>CONTACT US</h2>
-        <p type="Name:">
-          <input
-            className="inputfield"
-            id="name"
-            placeholder="Name"
-          ></input>
-        </p>
-        <p type="Email:">
-          <input
-            className="inputfield"
-            id="email"
-            placeholder="Email"
-          ></input>
-        </p>
-        <p type="Message:">
-          <input
-            className="inputfield"
-            id="subject"
-            placeholder="Subject"
-          ></input>
-        </p>
-        <p type="Message:">
-          <input
-            className="inputfield"
-            id="message"
-            placeholder="Message"
-          ></input>
-        </p>
-        <button id="btn" className="bubbly-button" onClick={showMessage}>
-          Submit
-        </button>
-      </form>
-    </main>
+    <>
+      <div id="contact-form-container">
+        <div id="left-contact-container">
+          <h1>CONTACT US</h1>
+          <div id="left-contact-details">
+            <p>
+              CBS Lumber is dedicated to offering you the best experince,
+              products, and quality at an affordable price.
+            </p>
+            <p>
+              Leave your information or give us a call, and we'll help fulfill
+              your lumber needs.
+            </p>
+            <p>
+              <PhoneInTalkIcon className="contact-icons" />
+              (720)-756-1299
+            </p>
+            <a href="mailto:Cobuildingsolutions@gmail.com">
+              <EmailIcon className="contact-icons" />
+              ColoradoBuildingSolutions@gmail.com
+            </a>
+          </div>
+        </div>
+        {/* <form className="inputContainer" onSubmit={sendEmail}> */}
+        <form className="inputContainer">
+          <p type="Name:">
+            <input
+              className="inputfield"
+              id="name"
+              type="text"
+              placeholder="* Name"
+              required
+            ></input>
+          </p>
+          <p type="Email:">
+            <input
+              className="inputfield"
+              id="email"
+              placeholder="* Email"
+              required
+            ></input>
+          </p>
+          <p type="PhoneNumber:">
+            <input
+              type="number"
+              className="inputfield"
+              id="phoneNumber"
+              placeholder="Phone Number"
+            ></input>
+          </p>
+          <div className="checkboxform field">
+            <h4>Products of Interest*</h4>
+            <label>
+              <input type="checkbox" className="checkboxOptions" id="lumber" />
+              Lumber
+            </label>
+            <label>
+              <input type="checkbox" className="checkboxOptions" id="plywood" />
+              Plywood/Veneer
+            </label>
+            <label>
+              <input type="checkbox" className="checkboxOptions" id="osb" />
+              OSB
+            </label>
+            <label>
+              <input type="checkbox" className="checkboxOptions" id="lsl" />
+              LSL
+            </label>
+          </div>
+          <p type="Message:">
+            <input
+              className="inputfield"
+              id="subject"
+              placeholder="* Subject"
+              required
+            ></input>
+          </p>
+          <p type="Message:">
+            <input
+              className="inputfield"
+              id="message"
+              placeholder="* Message"
+              required
+            ></input>
+          </p>
+          <button id="btn" className="bubbly-button" onClick={showMessage}>
+            Submit
+          </button>
+        </form>
+      </div>
+      <Certification />
+    </>
   );
 }
 

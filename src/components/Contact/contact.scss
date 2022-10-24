@@ -1,6 +1,53 @@
+#contact-form-container {
+  position: relative;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  bottom: 80px;
+  padding: 0;
+  background-image: url(../../images/main-page-header1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-form-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 40%;
+  justify-content: center;
+}
+.contact-icons {
+  position: relative;
+  margin-right: 20px;
+}
+#left-contact-details {
+  position: relative;
+  display: block;
+  color: white;
+  background-color: rgb(36, 38, 41, 0.8);
+  width: 50%;
+  height: auto;
+  padding: 30px;
+  margin: auto;
+  font-size: 24px;
+}
+#left-contact-container h1{
+  color: white;
+  font-size: 38px;
+}
+#left-contact-details p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#left-contact-details a{
+  text-decoration: none;
+  color: white;
+}
 .inputContainer {
-  width: 60%;
-  height: 440px;
+  width: 80%;
+  color: #bebed2;
+  height:contain;
   background-color: rgb(36, 38, 41, 0.9);
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -31,6 +78,7 @@
   border-bottom: 2px solid #bebed2;
   color: rgb(195, 192, 192);
 }
+
 .inputfield:focus {
   border-bottom: 2px solid #646464;
 }
@@ -40,6 +88,13 @@
   margin: 28px 0 0;
   font-size: 14px;
   color: #5a5a5a;
+}
+.checkboxform {
+  position: relative;
+  display: inline-block;
+}
+.checkboxOptions {
+  display: block;
 }
 #btn {
   display: flex;
