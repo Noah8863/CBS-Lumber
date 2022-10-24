@@ -30,7 +30,7 @@ function NavBar() {
             </Link>
           </ul>
         </div>
-        <div id="navbar-contact-container">
+        {/* <div id="navbar-contact-container">
           <div id="left-contact">
             <p>Call Us Today!</p>
             <a className="phone-number" href="tel:7207561299">
@@ -45,7 +45,7 @@ function NavBar() {
               ></PhoneInTalkIcon>
             </a>
           </div>
-        </div>
+        </div> */}
       </nav>
     </div>
   );

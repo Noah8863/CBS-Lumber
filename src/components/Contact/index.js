@@ -52,8 +52,8 @@ function Contact() {
     <>
       <div id="contact-form-container">
         <div id="left-contact-container">
-          <h1>CONTACT US</h1>
           <div id="left-contact-details">
+          <h1>CONTACT US</h1>
             <p>
               CBS Lumber is dedicated to offering you the best experince,
               products, and quality at an affordable price.
