@@ -19,18 +19,9 @@
     justify-content: center;
     gap: none;
 }
-#header-left {
-    position: relative;
-    background-size: contain;
+#lumber-description-container {
+    background-image: url(../../images/main-page-header1.jpg);
+    background-size:cover;
     background-repeat: no-repeat;
     width: auto;
 }
-#header-right {
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: auto;
-}
-// #lumber-description-container {
-//     background-image: url(../../images/);
-// }

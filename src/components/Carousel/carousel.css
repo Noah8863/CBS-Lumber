@@ -12,6 +12,10 @@
 .swiper-pictures img {
     width: 40%;
 }
+#header-banner {
+    width: 100%;
+    background-size: contain;
+}
 @media screen and (max-width:550px){
     .swiper-pictures img {
         width: 100%;

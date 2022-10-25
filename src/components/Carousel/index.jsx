@@ -7,11 +7,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./carousel.css";
 import "swiper/css";
-
+import banner from '../../images/Permanent-Banner.png'
 export default function Carousel() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      {/* Future option to have a carousel.  */}
+      {/* <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide className="swiper-pictures"><img src={IMG1} /></SwiperSlide>
         <SwiperSlide className="swiper-pictures">Slide 2</SwiperSlide>
         <SwiperSlide className="swiper-pictures">Slide 3</SwiperSlide>
@@ -21,7 +22,8 @@ export default function Carousel() {
         <SwiperSlide className="swiper-pictures">Slide 7</SwiperSlide>
         <SwiperSlide className="swiper-pictures">Slide 8</SwiperSlide>
         <SwiperSlide className="swiper-pictures">Slide 9</SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+      <img id="header-banner" src={banner}></img>
     </>
   );
 }
