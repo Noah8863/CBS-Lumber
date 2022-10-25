@@ -1,0 +1,27 @@
+#project-header-container {
+    position: relative;
+    display: flex;
+}
+#header-description {
+    position: relative;
+    z-index: 3;
+}
+#product-header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#header-left {
+    position: relative;
+    background-image: url(../../images/product-wood-img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+}
+#header-right {
+    position: relative;
+    background-image: url(../../images/product-wood-img.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: auto;
+}

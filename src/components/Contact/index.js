@@ -66,9 +66,9 @@ function Contact() {
               <PhoneInTalkIcon className="contact-icons" />
               (720)-756-1299
             </p>
-            <a href="mailto:Cobuildingsolutions@gmail.com">
+            <a href="mailto:info@cbs-lumber.com">
               <EmailIcon className="contact-icons" />
-              ColoradoBuildingSolutions@gmail.com
+              Info@CBS-Lumber.com
             </a>
           </div>
         </div>
@@ -102,20 +102,20 @@ function Contact() {
           <div className="checkboxform field">
             <h4>Products of Interest*</h4>
             <div id="checklist">
-              <input id="01" type="checkbox" value="1" />
+              <input id="01 lumber" type="checkbox" value="1" />
               <label for="01">Lumber</label>
 
-              <input id="02" type="checkbox" value="2" />
+              <input id="02 osb" type="checkbox" value="2" />
               <label for="02">OSB</label>
 
-              <input id="03" type="checkbox" value="3" />
+              <input id="03 plywood" type="checkbox" value="3" />
               <label for="03">Plywood/Veneer</label>
 
-              <input id="04" type="checkbox" value="4" />
+              <input id="04 ijoists" type="checkbox" value="4" />
               <label for="04">I Joists</label>
 
               <input id="05" type="checkbox" value="5" />
-              <label for="05">LSL</label>
+              <label for="05 lsl">LSL</label>
             </div>
             {/* <label>
               <input type="checkbox" className="checkboxOptions" id="lumber" />

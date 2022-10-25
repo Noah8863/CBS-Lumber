@@ -18,7 +18,7 @@ function NavBar() {
                 <p>HOME</p>
               </li>
             </Link>
-            <Link>
+            <Link to="/products">
               <li className="navbar-containers">
                 <p>PRODUCTS </p>
               </li>

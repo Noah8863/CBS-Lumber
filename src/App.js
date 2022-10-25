@@ -6,6 +6,7 @@ import Info from "./components/Info/index";
 import Certifications from "./components/Certification/index";
 import ContactCard from "./components/Contact-Card/index";
 import Contact from "./components/Contact/index";
+import Products from './components/Products/index';
 import "./main.scss";
 
 function App() {
@@ -29,6 +30,11 @@ function App() {
         <Route exact path="/contact" element={
           <>
             <Contact />
+          </>
+        } />
+        <Route exact path="/products" element={
+          <>
+            <Products />
           </>
         } />
       </Routes>
