@@ -23,13 +23,16 @@ function Contact() {
       plywood: document.getElementById("plywood").checked ? "Yes ✅" : "No ❌",
       osb: document.getElementById("osb").checked ? "Yes ✅" : "No ❌",
       lsl: document.getElementById("lsl").checked ? "Yes ✅" : "No ❌",
+      lvl: document.getElementById("lvl").checked ? "Yes ✅" : "No ❌",
+      ijoists: document.getElementById("ijoists").checked ? "Yes ✅" : "No ❌",
+      ewp: document.getElementById("ewp").checked ? "Yes ✅" : "No ❌",
       subject: document.getElementById("subject").value,
       message: document.getElementById("message").value,
     };
     console.log(formData);
     emailjs
       .send(
-        "service_32wky28",
+        "service_yctb6c8",
         "template_s77x9a4",
         formData,
         "nIOQ4DjOD6VPrQRy0"
@@ -72,8 +75,8 @@ function Contact() {
             </a>
           </div>
         </div>
-        {/* <form className="inputContainer" onSubmit={sendEmail}> */}
-        <form className="inputContainer">
+        <form className="inputContainer" onSubmit={sendEmail}>
+        {/* <form className="inputContainer"> */}
           <p type="Name:">
             <input
               className="inputfield"
@@ -102,20 +105,29 @@ function Contact() {
           <div className="checkboxform field">
             <h4>Products of Interest*</h4>
             <div id="checklist">
-              <input id="01 lumber" type="checkbox" value="1" />
-              <label for="01">Lumber</label>
 
-              <input id="02 osb" type="checkbox" value="2" />
-              <label for="02">OSB</label>
+              <input id="umber" type="checkbox" value="1" />
+              <label htmlFor="01 lumber">Lumber</label>
 
-              <input id="03 plywood" type="checkbox" value="3" />
-              <label for="03">Plywood/Veneer</label>
+              <input id="osb" type="checkbox" value="2" />
+              <label htmlFor="02 osb">OSB</label>
 
-              <input id="04 ijoists" type="checkbox" value="4" />
-              <label for="04">I Joists</label>
+              <input id="plywood" type="checkbox" value="3" />
+              <label htmlFor="03 plywood">Plywood</label>
 
-              <input id="05" type="checkbox" value="5" />
-              <label for="05 lsl">LSL</label>
+              <input id="lvl" type="checkbox" value="7" />
+              <label htmlFor="07 lvl">LVL</label>
+
+              <input id="ijoists" type="checkbox" value="4" />
+              <label htmlFor="04 ijoists">I Joists</label>
+
+              <input id="lsl" type="checkbox" value="5" />
+              <label htmlFor="05 lsl">LSL</label>
+
+              <input id="ewp" type="checkbox" value="6" />
+              <label htmlFor="06 ewp">EWP</label>
+
+              
             </div>
             {/* <label>
               <input type="checkbox" className="checkboxOptions" id="lumber" />
