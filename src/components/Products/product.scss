@@ -27,7 +27,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
-  height: 500px;
+  height: auto;
   justify-content: center;
 }
 #lumber-description-card {
@@ -237,14 +237,33 @@
     --pex: -24px;
   }
 }
+#main-product-container {
+  position: relative;
+  display: grid;
+  height: contain;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  background-image: url(../../images/wood-background.png);
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 4em;
+  margin: 20px;
+}
+#main-product-container img{
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
 
 @media screen and (max-width: 450px) {
   #lumber-description-container {
-    height: auto;
     text-align: center;
   }
   #lumber-info-description {
     width: auto;
+    height: auto;
     word-spacing: 5px;
   }
 }

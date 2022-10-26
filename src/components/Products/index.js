@@ -52,6 +52,12 @@ function Products() {
           </div>
         </div>
       </div>
+      <div id="main-product-container">
+        <img src={leftPicture}></img>
+        <img src={rightPicture}></img>
+        <img src={leftPicture}></img>
+        <img src={rightPicture}></img>
+      </div>
       <Certification />
       <Contact />
     </>
