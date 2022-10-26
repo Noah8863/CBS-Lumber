@@ -106,7 +106,7 @@ function Contact() {
             <h4>Products of Interest*</h4>
             <div id="checklist">
 
-              <input id="umber" type="checkbox" value="1" />
+              <input id="lumber" type="checkbox" value="1" />
               <label htmlFor="01 lumber">Lumber</label>
 
               <input id="osb" type="checkbox" value="2" />
