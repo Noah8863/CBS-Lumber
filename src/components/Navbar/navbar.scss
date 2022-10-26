@@ -6,7 +6,10 @@
     background-size: cover;
     // background-color: green;
 }
-
+#navbar-items {
+    position: relative;
+    top: 50px;
+}
 #logo {
     position: relative;
     display: flex;
@@ -36,13 +39,14 @@
 #navbar-contact-container {
     position: relative;
     display: block;
-    float: right;
-    bottom: 210px;
+    //TODO: this is whats causing the weird white space
+    // float: right;
+    left: 80vw;
+    bottom: 15vh;
     margin-right: 10px;
     font-size: 20px;
     width: 20%;
     text-align: center;
-    border-left: 3px solid black;
 }
 #left-contact {
     position: relative;
@@ -62,6 +66,7 @@
     position: relative;
     top: 30px;
     right: 40px;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 890px) {
@@ -87,9 +92,18 @@
         height: 60px;
         font-size: 16px;
         margin-right: 0px;
-        margin-top:40px;
         bottom: 200px;
         padding: 5px;
+        left: 19vw;
+    }
+    #navbar-items {
+        position: relative;
+        top: 85px;
     }
 }
-
+@media screen and (max-width:550px){
+    #navbar-items {
+        position: relative;
+        top: 80px;
+    }
+}
