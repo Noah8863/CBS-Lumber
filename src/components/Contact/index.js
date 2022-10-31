@@ -65,10 +65,10 @@ function Contact() {
               Leave your information or give us a call, and we'll help fulfill
               your lumber needs.
             </p>
-            <p>
+            <a id="contact-phone-number" href="tel:7207561299">
               <PhoneInTalkIcon className="contact-icons" />
               (720)-756-1299
-            </p>
+            </a>
             <a href="mailto:info@cbs-lumber.com">
               <EmailIcon className="contact-icons" />
               Info@CBS-Lumber.com
