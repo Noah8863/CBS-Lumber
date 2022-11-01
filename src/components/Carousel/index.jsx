@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
-import IMG1 from "../../images/main-page-header1.jpg";
+import Plywood from '../../images/plywood.jpg'
 import LSL from "../../images/LSL-Product-Image.jpg";
 import OSB from "../../images/OSB-Product-Image.jpg";
 import IJoists from "../../images/I-Joists-Product-Image.jpg";
 import LVL from "../../images/LVL-Product-Image.jpg";
-import Lumber from "../../images/lumber-card-img.jpg";
+import Lumber from "../../images/Lumber-product-card-img.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -90,7 +90,7 @@ export default function Carousel() {
               </Link>
             </div>
             <div className="product-right-side-container">
-              <img className="right-side-product-image" src={IMG1} />
+              <img className="right-side-product-image" src={Plywood} />
             </div>
           </div>
         </SwiperSlide>
