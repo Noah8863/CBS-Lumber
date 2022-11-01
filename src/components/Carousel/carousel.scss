@@ -6,12 +6,18 @@
     position: relative;
     display: flex;
     width: 90vw;
-    height: auto;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    
 }
 .swiper-pictures {
     position: relative;
     display: flex;
     justify-content: center;
+    margin: auto;
+    align-items: center;
 }
 .swiper-pictures img {
     width: 40%;
@@ -133,6 +139,13 @@
 }
 
 @media screen and (max-width:550px){
+    .swiper {
+        width: 92vw;
+        margin-left: 15vw;
+    }
+    .swiper-pictures {
+        right: 10px;
+    }
     .swiper-pictures img {
         width: 100%;
     }
