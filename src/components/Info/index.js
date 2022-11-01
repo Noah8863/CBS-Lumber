@@ -37,15 +37,7 @@ function Info() {
         <div id="lumber-info-card">
           <h1 id="lumber-info-header-mobile">LUMBER BUILT ON VALUES</h1>
           <p>
-            When you work with CBS Lumber, you get more than high quality
-            lumber, though that is our main product. We are dedicated to
-            outstanding customer service to make sure our customers feel
-            understood and that all their needs are met. Our team at Colorado
-            Building Solutions is prepared with the knowledge and understanding
-            of construction, and meeting needs of our customers in our highest
-            priority. Whether it comes to framing, new construction, or
-            renovations, we have the lumber supply to get your commerical
-            project moving quickly and on budget.
+          When you work with CBS Lumber, you get more than high-quality lumber, though that is our main product. We are dedicated to outstanding customer service to make sure our customers feel understood and that all their needs are met. Our team at Colorado Building Solutions is prepared with the knowledge and understanding of construction, and meeting the needs of our customers is our highest priority. Whether it comes to framing, new construction, or renovations, we have the lumber supply to get your commercial project moving quickly and on budget.
           </p>
           <h1 id="lumber-info-header">LUMBER BUILT ON VALUES</h1>
         </div>
@@ -59,18 +51,7 @@ function Info() {
             </div>
             <div>
               <p>
-                CBS-Lumber supply division, based out of Englewood, COlorado,
-                was founded back in 2020 when our owners saw the impact the
-                supply shortages brought to us. Our goal is to bring the most
-                affordable, quality lumber products for either pick up or
-                delivery. We value the relationships we form with our customers
-                and strive to supply you with what you need. CBS-Lumber is proud
-                to server Denver, GOlder, Westminster, Thornton, Broomfield,
-                Boulder, Lakewood, Littleton, Highlands Ranch, Centennial,
-                Parker, Aurora, Brighton, and other surrounding areas. Colorado
-                Building Solutions has partnerships with Nova Incorporations. We
-                take pride in all of our services we offer and strive to provide
-                you with great service.
+              CBS-Lumber supply division, based out of Englewood, Colorado, was founded back in 2020 when our owners saw the impact the supply shortages brought to us. Our goal is to bring the most affordable, quality lumber products for either pick-up or delivery. We value the relationships we form with our customers and strive to supply you with what you need. CBS-Lumber is proud to serve Denver, Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood, Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton, and other surrounding areas. Colorado Building Solutions has partnerships with Nova Incorporations. We take pride in all of our services we offer and strive to provide you with great service.
               </p>
             </div>
           </div>

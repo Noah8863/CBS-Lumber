@@ -23,15 +23,7 @@ function Products() {
           <h1 style={{ fontSize: "42px" }}>LUMBER</h1>
           <div id="lumber-info-description">
             <p>
-              Colorado Building Solutions now has a bulk lumber supply at our
-              warehouse, with supply avaliable today for pickup or delivery. CBS
-              Lumber provides a variety of lumber to meet all of your building
-              needs. Our Lumber supply includes OSB, OSB Tongue and Groove,
-              Plywood, and traditional lumber. With a few other products being
-              added soon. CBS Lumber is a wholesale lumber wendor serving
-              Denver, Golden, Westminster, Thornton, Broomfield, Boulder,
-              Lakewood, Littleton, Highlands Ranch, Centennial, Parker, Aurora,
-              Brighton, and other surrounding areas.
+            Colorado Building Solutions now has a bulk lumber supply at our warehouse, with supplies available today for pickup or delivery. CBS Lumber provides a variety of lumber to meet all of your building needs. Our Lumber supply includes OSB, OSB Tongue and Groove, Plywood, and traditional lumber. With a few other products being added soon. CBS Lumber is a wholesale lumber vendor serving Denver, Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood, Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton, and other surrounding areas.
             </p>
             <Link to="/contact">
             {/* Credit to Aaron Iker for button styles below */}

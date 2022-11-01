@@ -24,11 +24,7 @@ export default function Carousel() {
             <div className="product-left-side-container">
               <h1>EWP, LSL</h1>
               <p>
-                An optimized structural product engineered for quality. A
-                product that is gaining widespread use. It has high strength,
-                high stiffness and dimensinal stability. LSL floor panels
-                fastened to glulam purlins and steel beams. Available in 1.35E
-                and 1.55E.
+              An optimized structural product engineered for quality. A product that is gaining widespread use. It has high strength, high stiffness, and dimensional stability. LSL floor panels are fastened to glulam purlins and steel beams. Available in 1.35E and 1.55E.
               </p>
               <Link to="/contact">
                 <button className="buy-now button1">
@@ -49,10 +45,7 @@ export default function Carousel() {
             <div className="product-left-side-container">
               <h1>OSB</h1>
               <p>
-                A proprietary Blue Edge Seal creates a moisture resistant panel
-                which resists swelling. To Keep our air clean, our OSB contains
-                no added area-formaldehtde resin (NAUF) for improved indoor air
-                quality.
+              A proprietary Blue Edge Seal creates a moisture-resistant panel that resists swelling. To Keep our air clean, our OSB contains no added area-formaldehtde resin (NAUF) for improved indoor air quality.
               </p>
               <p>Thickness: 7/16, 19/32, 23,/32</p>
               <p>Lengths: 6', 8'</p>
@@ -76,8 +69,8 @@ export default function Carousel() {
             <div className="product-left-side-container">
               <h1>PLYWOOD</h1>
               <p>
-                A 4 ply thickness plywood build with quality and performance in
-                mind. For uses for;
+                A 4 ply thickness plywood built with quality and performance in
+                mind. For uses like;
                 <ul>
                   <li>Underlayment</li>
                   <li>Subfloor</li>
@@ -106,11 +99,7 @@ export default function Carousel() {
             <div className="product-left-side-container">
               <h1>I JOISTS</h1>
               <p>
-                Used extensively in residential floor and roof framing. They are
-                ideal for long spans, including continuous spans over
-                intermediate supports. Because I-joists are straights and true,
-                it's easier for builders to avoid crowning and maintain a level
-                framing surface.
+              Used extensively in residential floor and roof framing. They are ideal for long spans, including continuous spans over intermediate supports. Because I-joists are straight and true, it's easier for builders to avoid crowning and maintain a level framing surface.
               </p>
               <Link to="/contact">
                 <button className="buy-now button1">
