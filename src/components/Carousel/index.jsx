@@ -66,13 +66,98 @@ export default function Carousel() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="swiper-pictures">Slide 3</SwiperSlide>
-        <SwiperSlide className="swiper-pictures">Slide 4</SwiperSlide>
-        <SwiperSlide className="swiper-pictures">Slide 5</SwiperSlide>
-        <SwiperSlide className="swiper-pictures">Slide 6</SwiperSlide>
-        <SwiperSlide className="swiper-pictures">Slide 7</SwiperSlide>
-        <SwiperSlide className="swiper-pictures">Slide 8</SwiperSlide>
-        <SwiperSlide className="swiper-pictures">Slide 9</SwiperSlide>
+        <SwiperSlide className="swiper-pictures">
+          <div className="product-swiper-container">
+            <div className="product-left-side-container">
+              <h1>PLYWOOD</h1>
+              <p>
+                A 4 ply thickness plywood build with quality and performance in
+                mind. For uses for;
+                <ul>
+                  <li>Underlayment</li>
+                  <li>Subfloor</li>
+                  <li>Sheathing</li>
+                  <li>RV and cargo trailer panels</li>
+                  <li>Veneer</li>
+                </ul>
+              </p>
+              <p>Dimension: 4 ply, 1/2"</p>
+              <Link to="/contact">
+                <button className="buy-now button1">
+                  <span className="circle" aria-hidden="true">
+                    <span className="icon arrow"></span>
+                  </span>
+                  <span className="button-text">Buy Now</span>
+                </button>
+              </Link>
+            </div>
+            <div className="product-right-side-container">
+              <img className="right-side-product-image" src={IMG1} />
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-pictures">
+          <div className="product-swiper-container">
+            <div className="product-left-side-container">
+              <h1>I JOISTS</h1>
+              <p>
+                Used extensively in residential floor and roof framing. They are ideal for long spans, including continuous spans over intermediate supports. Because I-joists are straights and true, it's easier for builders to avoid crowning and maintain a level framing surface.
+              </p>
+              <Link to="/contact">
+                <button className="buy-now button1">
+                  <span className="circle" aria-hidden="true">
+                    <span className="icon arrow"></span>
+                  </span>
+                  <span className="button-text">Buy Now</span>
+                </button>
+              </Link>
+            </div>
+            <div className="product-right-side-container">
+              <img className="right-side-product-image" src={IMG1} />
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="swiper-pictures"><div className="product-swiper-container">
+            <div className="product-left-side-container">
+              <h1>LVL</h1>
+              <p>
+                Laminated veneer lumber is an engineered wood product that uses multiple layers of thin wood assembled with adhesives.
+              </p>
+              <Link to="/contact">
+                <button className="buy-now button1">
+                  <span className="circle" aria-hidden="true">
+                    <span className="icon arrow"></span>
+                  </span>
+                  <span className="button-text">Buy Now</span>
+                </button>
+              </Link>
+            </div>
+            <div className="product-right-side-container">
+              <img className="right-side-product-image" src={IMG1} />
+            </div>
+          </div>
+          </SwiperSlide>
+        <SwiperSlide className="swiper-pictures"><div className="product-swiper-container">
+            <div className="product-left-side-container">
+              <h1>LUMBER</h1>
+              <p>
+                Quality lumber products with various sizes to fit all your needs.
+              </p>
+              <p>2 x 4" - 2 x 12" and 8-20"</p>
+              <Link to="/contact">
+                <button className="buy-now button1">
+                  <span className="circle" aria-hidden="true">
+                    <span className="icon arrow"></span>
+                  </span>
+                  <span className="button-text">Buy Now</span>
+                </button>
+              </Link>
+            </div>
+            <div className="product-right-side-container">
+              <img className="right-side-product-image" src={IMG1} />
+            </div>
+          </div>
+          </SwiperSlide>
       </Swiper>
     </>
   );
