@@ -1,34 +1,35 @@
 #contact-card-container {
-    position: relative;
-    display: flex;
-    background-image: url(../../images/fork-lift-banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 30px;
-    // TODO: Figure out background size and position 
+  position: relative;
+  display: flex;
+  background-image: url(../../images/fork-lift-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+  // TODO: Figure out background size and position
 }
 #contact-card {
-    position: relative;
-    float: right;
-    //TODO: float right, left, center?
-    margin: 10px;
-    background-color: rgba(178, 176, 176, 0.8);
-    color: white;
-    text-align: left;
-    padding: 60px;
-    font-size:22px;
+  position: relative;
+  float: right;
+  //TODO: float right, left, center?
+  margin: 20px;
+  background-color: rgba(178, 176, 176, 0.8);
+  color: white;
+  text-align: left;
+  padding: 60px;
+  font-size: 22px;
 }
 #contact-card a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 508px) {
-    #contact-card {
-        padding: 10px;
-        margin: 40px;
-    }
-    #contact-card-container {
-        background-size:100% 400px;
-    }
+  #contact-card {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  #contact-card-container {
+    background-size: 100% 400px;
+  }
 }

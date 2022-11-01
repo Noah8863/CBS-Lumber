@@ -36,7 +36,7 @@
   align-items: center;
   background-color: rgb(216, 201, 156, 0.8);
   padding: 20px;
-  width: 100%;
+  width: 90%;
 }
 .info-cards p {
   font-size: 18px;
@@ -132,6 +132,9 @@
   #lumber-info-header-mobile {
     display: flex;
     font-size: 18px;
+    text-align:center;
+    background-color:rgba(128, 128, 128, 0.8);
+  
   }
   #lumber-info-header {
     display: none;
