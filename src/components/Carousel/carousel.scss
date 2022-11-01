@@ -1,155 +1,158 @@
-
-@mixin transition($property: all, $duration: 1.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
-    transition: $property $duration $ease;
-  }
+@mixin transition(
+  $property: all,
+  $duration: 1.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
+  transition: $property $duration $ease;
+}
 .swiper {
-    position: relative;
-    display: flex;
-    width: 90vw;
-    justify-content: center;
-    margin: 10px;
-    align-items: center;
-    text-align: center;
-    
+  position: relative;
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
 }
 .swiper-pictures {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
 }
 .swiper-pictures img {
-    width: 40%;
+  width: 40%;
 }
 .product-swiper-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 60%;
-    height: contain;
-    margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 60%;
+  height: contain;
+  margin: auto;
 }
 .product-left-side-container {
-    position: relative;
-    margin: auto;
-    text-align: left;
-    padding: 30px;
-    // padding-left: 50%;
-    color: white;
-    // background-color: green;
-    background-color: rgb(36, 38, 41, 0.9);
+  position: relative;
+  margin: auto;
+  text-align: left;
+  padding: 30px;
+  color: white;
+  background-color: rgb(36, 38, 41, 0.9);
 }
 .product-right-side-container {
-    position: relative;
-    display: flex;
-    padding: 10px;
-    padding-right: 10%;
-    // background-color: red;
+  position: relative;
+  display: flex;
+  padding: 10px;
+  padding-right: 10%;
+  // background-color: red;
 }
 .right-side-product-image {
-    position: relative;
-    display: flex;
-    border: 5px solid rgb(255, 179, 0);
-    border-radius: 25px;
-    height: 300px;
+  position: relative;
+  display: flex;
+  border: 5px solid rgb(255, 179, 0);
+  border-radius: 25px;
+  height: 300px;
 }
 
 .button1 {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-    &.buy-now {
-      width: 11.5rem;
-      height: auto;
-      margin-bottom: 0px;
-      .circle {
-        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-        position: relative;
-        display: block;
-        margin: 0;
-        width: 2rem;
-        height: 2rem;
-        background: grey;
-        border-radius: 1.625rem;
-        .icon {
-          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          &.arrow {
-            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-            left: 0.25rem;
-            width: 1rem;
-            height: 0.125rem;
-            background: none;
-            &::before {
-              position: absolute;
-              content: '';
-              top: -0.25rem;
-              right: 0.0625rem;
-              width: 0.625rem;
-              height: 0.625rem;
-              border-top: 0.125rem solid #fff;
-              border-right: 0.125rem solid #fff;
-              transform: rotate(45deg);
-            }
-          }
-        }
-      }
-      .button-text {
-        @include transition(all, .45s, cubic-bezier(0.65,0,.076,1));
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.buy-now {
+    width: 11.5rem;
+    height: auto;
+    margin-bottom: 0px;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 2rem;
+      height: 2rem;
+      background: grey;
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
         position: absolute;
         top: 0;
-        left: 1rem;
-        right: 0;
-        bottom: 1.5rem;
-        padding: 0.75rem 0;
+        bottom: 0;
         margin: auto;
-        color: grey;
-        font-weight: 700;
-        line-height: 1.6;
-        text-align: center;
-        text-transform: uppercase;
-      }
-    }
-    &:hover {
-      .circle {
-        width: 100%;
-        .icon {
-          &.arrow {
-          background: white;
-          transform: translate(1rem, 0);
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+          left: 0.25rem;
+          width: 1rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: "";
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
           }
         }
       }
-        .button-text {
-        color: white;
-        }
     }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      right: 0;
+      bottom: 1.5rem;
+      padding: 0.75rem 0;
+      margin: auto;
+      color: grey;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: white;
+          transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: white;
+    }
+  }
 }
 
-@media screen and (max-width:550px){
-    .swiper {
-        width: 92vw;
-        margin-left: 15vw;
-    }
-    .swiper-pictures {
-        right: 10px;
-    }
-    .swiper-pictures img {
-        width: 100%;
-    }
-    .product-right-side-container {
-        display: none;
-    }
+@media screen and (max-width: 550px) {
+  .swiper {
+    width: 92vw;
+    margin-left: 15vw;
+  }
+  .swiper-pictures {
+    right: 10px;
+  }
+  .swiper-pictures img {
+    width: 100%;
+  }
+  .product-swiper-container {
+    display: flex;
+  }
+  .product-right-side-container {
+    display: none;
+  }
 }

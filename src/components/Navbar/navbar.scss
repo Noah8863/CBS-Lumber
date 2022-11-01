@@ -107,4 +107,18 @@
         position: relative;
         top: 80px;
     }
+    #left-contact {
+        float: none;
+        padding-left: 0px;
+        display: block;
+        top: 50px;
+    }
+    #phone-icon {
+        display: block;
+        top: -20px;
+        left: 70px;
+        border-right: 2px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }

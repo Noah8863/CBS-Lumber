@@ -143,6 +143,9 @@
   .swiper-pictures img {
     width: 100%;
   }
+  .product-swiper-container {
+    display: flex;
+  }
   .product-right-side-container {
     display: none;
   }

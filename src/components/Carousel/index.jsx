@@ -4,10 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import IMG1 from "../../images/main-page-header1.jpg";
 import LSL from "../../images/LSL-Product-Image.jpg";
-import OSB from '../../images/OSB-Product-Image.jpg';
+import OSB from "../../images/OSB-Product-Image.jpg";
 import IJoists from "../../images/I-Joists-Product-Image.jpg";
 import LVL from "../../images/LVL-Product-Image.jpg";
-import Lumber from "../../images/lumber-card-img.jpg"
+import Lumber from "../../images/lumber-card-img.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -106,7 +106,11 @@ export default function Carousel() {
             <div className="product-left-side-container">
               <h1>I JOISTS</h1>
               <p>
-                Used extensively in residential floor and roof framing. They are ideal for long spans, including continuous spans over intermediate supports. Because I-joists are straights and true, it's easier for builders to avoid crowning and maintain a level framing surface.
+                Used extensively in residential floor and roof framing. They are
+                ideal for long spans, including continuous spans over
+                intermediate supports. Because I-joists are straights and true,
+                it's easier for builders to avoid crowning and maintain a level
+                framing surface.
               </p>
               <Link to="/contact">
                 <button className="buy-now button1">
@@ -122,11 +126,13 @@ export default function Carousel() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="swiper-pictures"><div className="product-swiper-container">
+        <SwiperSlide className="swiper-pictures">
+          <div className="product-swiper-container">
             <div className="product-left-side-container">
               <h1>LVL</h1>
               <p>
-                Laminated veneer lumber is an engineered wood product that uses multiple layers of thin wood assembled with adhesives.
+                Laminated veneer lumber is an engineered wood product that uses
+                multiple layers of thin wood assembled with adhesives.
               </p>
               <Link to="/contact">
                 <button className="buy-now button1">
@@ -141,12 +147,14 @@ export default function Carousel() {
               <img className="right-side-product-image" src={LVL} />
             </div>
           </div>
-          </SwiperSlide>
-        <SwiperSlide className="swiper-pictures"><div className="product-swiper-container">
+        </SwiperSlide>
+        <SwiperSlide className="swiper-pictures">
+          <div className="product-swiper-container">
             <div className="product-left-side-container">
               <h1>LUMBER</h1>
               <p>
-                Quality lumber products with various sizes to fit all your needs.
+                Quality lumber products with various sizes to fit all your
+                needs.
               </p>
               <p>2 x 4" - 2 x 12" and 8-20"</p>
               <Link to="/contact">
@@ -162,7 +170,7 @@ export default function Carousel() {
               <img className="right-side-product-image" src={Lumber} />
             </div>
           </div>
-          </SwiperSlide>
+        </SwiperSlide>
       </Swiper>
     </>
   );
