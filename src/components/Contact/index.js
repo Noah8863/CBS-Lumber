@@ -4,6 +4,7 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
 import emailjs from "@emailjs/browser";
 import Certification from "../Certification/index";
+
 const clientName = document.getElementById("name");
 const email = document.getElementById("email");
 const subject = document.getElementById("subject");

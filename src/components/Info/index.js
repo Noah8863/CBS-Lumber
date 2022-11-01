@@ -2,11 +2,12 @@ import React from "react";
 import "./info.scss";
 // import HeaderImg from "../../images/main-page-header1.jpg";
 import Carousel from '../Carousel/index.jsx'
+import banner from '../../images/Permanent-Banner.png'
 
 function Info() {
   return (
     <main>
-      <Carousel />
+      <img id="header-banner" src={banner}></img>
       <div className="main-info-container">
         <div className="info-containers">
           <div className="info-cards">
