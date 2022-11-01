@@ -1,8 +1,8 @@
 import React from "react";
 import "./info.scss";
 // import HeaderImg from "../../images/main-page-header1.jpg";
-import Carousel from '../Carousel/index.jsx'
-import banner from '../../images/Permanent-Banner.png'
+import Carousel from "../Carousel/index.jsx";
+import banner from "../../images/Permanent-Banner.png";
 
 function Info() {
   return (
@@ -24,7 +24,7 @@ function Info() {
                 Highlands Ranch, Centennial, Parker, Aurora, Brighton, and other
                 surrounding areas. We are a team of fully certified
                 professionals who tackle everything from complex large projects
-                to smaller scale commercial jobs. Fueled by our commitment to
+                to smaller-scale commercial jobs. Fueled by our commitment to
                 excellence, Colorado Building Solutions goes the extra mile to
                 make sure clients are completely satisfied with our work.
               </p>
