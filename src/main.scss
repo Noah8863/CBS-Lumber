@@ -1,3 +1,12 @@
+@font-face {
+  font-family: mainFont;
+  src: url(UniversLightCondensed.ttf);
+}
+
+* {
+  font-family: mainFont;
+}
+
 html,body {
   margin:0;
   padding:0;
