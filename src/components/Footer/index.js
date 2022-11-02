@@ -51,7 +51,7 @@ function Footer() {
         <div>
           <h3 className="footerHeaders">Office Hours</h3>
           <p>8:00am - 3:00pm</p>
-          <p>* NO Walk-ins *</p>
+          <p>* NO in person walkins *</p>
         </div>
         <div id="addressContainer">
           <h3 className="footerHeaders">Address</h3>
