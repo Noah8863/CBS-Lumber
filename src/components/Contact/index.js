@@ -130,22 +130,6 @@ function Contact() {
 
               
             </div>
-            {/* <label>
-              <input type="checkbox" className="checkboxOptions" id="lumber" />
-              Lumber
-            </label>
-            <label>
-              <input type="checkbox" className="checkboxOptions" id="plywood" />
-              Plywood/Veneer
-            </label>
-            <label>
-              <input type="checkbox" className="checkboxOptions" id="osb" />
-              OSB
-            </label>
-            <label>
-              <input type="checkbox" className="checkboxOptions" id="lsl" />
-              LSL
-            </label> */}
           </div>
           <p type="Message:">
             <input
