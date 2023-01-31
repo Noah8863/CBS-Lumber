@@ -8,7 +8,7 @@ function ContactCard(){
                 <h1>CONTACT US</h1>
                 <p>www.CBS-Lumber.com</p>
                 <a href="mailto:info@cbs-lumber.com"><p>info@CBS-Lumber.com</p></a>
-                <a href="tel:7207561299"><p>(720) 756-1299</p></a>
+                <a href="tel:7205390461"><p>(720) 539-0461</p></a>
             </div>
         </div>
     )

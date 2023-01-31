@@ -33,8 +33,8 @@ function NavBar() {
         <div id="navbar-contact-container">
           <div id="left-contact">
             <p>Call Us Today!</p>
-            <a className="phone-number" href="tel:7207561299">
-              <p>(720) 756 1299</p>
+            <a className="phone-number" href="tel:7205390461">
+              <p>(720) 539-0461</p>
             </a>
           </div>
           <div id="right-contact">
