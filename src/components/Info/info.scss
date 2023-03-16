@@ -6,6 +6,7 @@
   width: 50%;
 }
 #header-banner {
+  position: relative;
   width: 100%;
   background-size: contain;
 }
@@ -59,6 +60,7 @@
   background-size:cover;
   background-repeat: no-repeat;
   color: white;
+  height: auto;
 }
 #lumber-info-card {
   position: relative;
@@ -68,7 +70,7 @@
   align-items: center;
   margin: auto;
   width: 60%;
-  height: 250px;
+  
   text-align: right;
   margin-bottom: 50px;
 }
@@ -138,5 +140,16 @@
   #lumber-info-header {
     display: none;
     margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 890px) {
+  #header-banner {
+    bottom: 80px;
+  }
+}
+@media screen and (max-width: 885px) {
+  #header-banner {
+    bottom: 20px;
   }
 }
