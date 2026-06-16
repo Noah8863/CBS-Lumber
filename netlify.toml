@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  # Pin to an LTS Node that react-scripts 5 builds cleanly on.
+  NODE_VERSION = "20"
+
+# SPA fallback: serve index.html for any path so client-side routes
+# (/contact, /products) work on direct visits and page refreshes.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

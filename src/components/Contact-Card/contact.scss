@@ -1,35 +1,79 @@
 #contact-card-container {
   position: relative;
-  display: flex;
   background-image: url(../../images/fork-lift-banner.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px;
-  // TODO: Figure out background size and position
+  background-position: center;
+}
+.contact-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(20, 16, 12, 0.55) 0%,
+    rgba(20, 16, 12, 0.78) 45%,
+    rgba(20, 16, 12, 0.95) 100%
+  );
+}
+.contact-card-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  padding-block: clamp(4rem, 9vw, 6.5rem);
 }
 #contact-card {
-  position: relative;
-  float: right;
-  //TODO: float right, left, center?
-  margin: 20px;
-  background-color: rgba(178, 176, 176, 0.8);
-  color: white;
-  text-align: left;
-  padding: 60px;
-  font-size: 22px;
+  width: min(100%, 480px);
 }
-#contact-card a {
-  color: white;
+#contact-card .section-title {
+  margin: 0.9rem 0 1.2rem;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+}
+.contact-card__lead {
+  color: var(--text-on-dark);
+  font-size: 1.12rem;
+  line-height: 1.65;
+  margin-bottom: 1.8rem;
+  max-width: 34em;
+}
+.contact-card__list {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.contact-card__list li,
+.contact-card__list a {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.55rem 0;
+  color: var(--paper-2);
   text-decoration: none;
+  font-size: 1.08rem;
+  transition: color 0.25s ease;
+}
+.contact-card__list a:hover {
+  color: var(--amber-bright);
+}
+.contact-card__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  color: var(--amber-bright);
+  background: rgba(207, 122, 44, 0.16);
+  border: 1px solid rgba(207, 122, 44, 0.35);
+  border-radius: 50%;
+}
+.contact-card__btn {
+  margin-top: 0.4rem;
 }
 
-@media screen and (max-width: 508px) {
-  #contact-card {
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-  }
-  #contact-card-container {
-    background-size: 100% 400px;
-  }
+@media screen and (max-width: 520px) {
+  #contact-card { width: 100%; }
+  .contact-card__btn { width: 100%; justify-content: center; }
 }

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "Bash(BROWSER=none PORT=3000 npm start)",
+      "Bash(echo \"started, pid $!\")",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(cp /tmp/shots/*.png .redesign-shots/)",
+      "Bash(cygpath -w \"C:/Users/White Yeti/Desktop/CBS-Lumber/.redesign-shots/home.png\")",
+      "Bash(taskkill //F //PID 37058 //T)",
+      "Bash(pkill -f react-scripts)",
+      "Bash(rm -rf .redesign-shots)",
+      "Bash(taskkill //F //PID 36616 //T)",
+      "Bash(netstat -ano)",
+      "Bash(perl -0777 -i -pe 's|<Link to=\"/contact\">\\\\s*<button className=\"buy-now button1\">.*?</button>\\\\s*</Link>|<Link to=\"/contact\" className=\"btn carousel-btn\">\\\\n                Buy Now\\\\n                <span className=\"btn-arrow\" aria-hidden=\"true\">\\\\x{2192}</span>\\\\n              </Link>|gs' src/components/Carousel/index.jsx)"
+    ]
+  }
+}

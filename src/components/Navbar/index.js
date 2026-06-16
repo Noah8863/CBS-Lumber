@@ -1,53 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.scss";
 import logo from "../../images/CBS-Lumber-Logo.png";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
 function NavBar() {
   return (
-    <div id="navbar-container">
-      <nav id="navbar">
-        <div id="logo-container">
-          <img id="logo" src={logo} />
-        </div>
-        <div>
+    <header id="site-header">
+      <div className="header-inner container">
+        <Link to="/" id="logo-link" aria-label="CBS-Lumber home">
+          <img id="logo" src={logo} alt="CBS-Lumber" />
+        </Link>
+
+        <nav id="primary-nav" aria-label="Primary">
           <ul id="navbar-items">
-            <Link to="/">
-              <li className="navbar-containers">
-                <p>HOME</p>
-              </li>
-            </Link>
-            <Link to="/products">
-              <li className="navbar-containers">
-                <p>PRODUCTS </p>
-              </li>
-            </Link>
-            <Link to="/contact">
-              <li className="navbar-containers">
-                <p id="contact-btn">CONTACT US</p>
-              </li>
-            </Link>
+            <li>
+              <NavLink to="/" end className="nav-link">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/products" className="nav-link">
+                Products
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact" className="nav-link nav-link--cta">
+                Contact Us
+              </NavLink>
+            </li>
           </ul>
+        </nav>
+
+        <div id="navbar-contact">
+          <a className="header-call" href="tel:7205390461">
+            <span className="header-call__text">
+              <span className="header-call__label">Call Us Today</span>
+              <span className="header-call__number">(720) 539-0461</span>
+            </span>
+          </a>
+          <a
+            className="header-call__icon"
+            href="tel:7207561299"
+            aria-label="Call (720) 756-1299"
+          >
+            <PhoneInTalkIcon fontSize="inherit" />
+          </a>
         </div>
-        <div id="navbar-contact-container">
-          <div id="left-contact">
-            <p>Call Us Today!</p>
-            <a className="phone-number" href="tel:7205390461">
-              <p>(720) 539-0461</p>
-            </a>
-          </div>
-          <div id="right-contact">
-            <a className="phone-number" href="tel:7207561299">
-              <PhoneInTalkIcon
-                id="phone-icon"
-                fontSize="large"
-              ></PhoneInTalkIcon>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </div>
+      </div>
+    </header>
   );
 }
 

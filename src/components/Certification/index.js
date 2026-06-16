@@ -5,15 +5,22 @@ import USDA from '../../images/USDA.png'
 
 function Certificate(){
     return (
-        <div id="cert-container">
-            <div id="cert-card">
-                <h1>CERTIFICATIONS</h1>
+        <section id="cert-container">
+            <div className="container" id="cert-card">
+                <div id="cert-heading">
+                    <p className="kicker">Verified &amp; Trusted</p>
+                    <h2 className="section-title">Certifications</h2>
+                </div>
                 <div id="cert-imgs">
-                    <img id="greenguard-img" src={GreenGuard} alt="GREENGUARD Certified"></img>
-                    <img id="usda-img" src={USDA} alt="USDA Certifed"></img>
+                    <div className="cert-chip">
+                        <img id="greenguard-img" src={GreenGuard} alt="GREENGUARD Certified"></img>
+                    </div>
+                    <div className="cert-chip">
+                        <img id="usda-img" src={USDA} alt="USDA Certified"></img>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

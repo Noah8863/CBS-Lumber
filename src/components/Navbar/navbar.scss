@@ -1,124 +1,195 @@
-#navbar {
-    position: relative;
-    width: 100%;
-    background-image: url(../../images/wood-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    // background-color: green;
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
 }
-#navbar-items {
-    position: relative;
-    top: 50px;
+
+#site-header .hazard-bar {
+  height: 6px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 0.65rem;
+}
+
+#logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 #logo {
-    position: relative;
-    display: flex;
-    width: 15%;
-    left: 20px;
-    top: 30px;
+  width: auto;
+  height: 82px;
+  transition: transform 0.3s ease;
+}
+#logo-link:hover #logo {
+  transform: scale(1.04);
 }
 
-#navbar-items a li {
-    cursor: pointer;
+/* ---- Nav links ---- */
+#primary-nav {
+  margin-left: auto;
 }
-.navbar-containers {
-    position: relative;
-    display: inline-block;
-    margin-right: 30px;
-    margin-bottom: 0;
-    top: 0;
-    left: -30px;
-    border: 2px;
-    font-size: 16px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: rgba(44, 43, 43, 0.8);
-    color: white;
+#navbar-items {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-#navbar-contact-container {
-    position: relative;
-    display: block;
-    //TODO: this is whats causing the weird white space
-    // float: right;
-    left: 80vw;
-    bottom: 15vh;
-    margin-right: 10px;
-    font-size: 20px;
-    width: 20%;
-    text-align: center;
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.25s ease;
 }
-#left-contact {
-    position: relative;
-    float: left;
-    padding-left: 20px;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.25rem;
+  height: 2px;
+  background: var(--amber);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
-
-#contact-btn {
-    color: white;
-    text-decoration: none;
+.nav-link:hover {
+  color: var(--ink);
 }
-.phone-number {
-    text-decoration: none;
-    color: black;
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
 }
-#phone-icon {
-    position: relative;
-    top: 30px;
-    right: 40px;
-    margin-left: 10px;
+.nav-link.active {
+  color: var(--ink);
 }
 
-@media screen and (max-width: 890px) {
-    #logo {
-        width: 30%;
-    }
-    .navbar-containers {
-        font-size: 14px;
-        position: relative;
-        display: inline-block;
-        left: 0px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 7px;
-        margin-right: 7px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: auto;
-    }
-    #navbar-contact-container {
-        width: auto;
-        height: 60px;
-        font-size: 16px;
-        margin-right: 0px;
-        bottom: 200px;
-        padding: 5px;
-        left: 19vw;
-    }
-    #navbar-items {
-        position: relative;
-        top: 85px;
-    }
+/* CTA pill link */
+.nav-link--cta {
+  margin-left: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  color: var(--ink);
+  background: var(--amber);
+  border-radius: var(--radius);
+  transition: background-color 0.25s ease, transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
-@media screen and (max-width:550px){
-    #navbar-items {
-        position: relative;
-        top: 80px;
-    }
-    #left-contact {
-        float: none;
-        padding-left: 0px;
-        display: block;
-        top: 50px;
-    }
-    #phone-icon {
-        display: block;
-        top: -20px;
-        left: 70px;
-        border-right: 2px solid black;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+.nav-link--cta::after { display: none; }
+.nav-link--cta:hover {
+  color: var(--ink);
+  background: var(--amber-bright);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-amber);
+}
+.nav-link--cta.active {
+  color: var(--ink);
+}
+
+/* ---- Header call block ---- */
+#navbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--line);
+}
+.header-call {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.header-call__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.header-call__label {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.header-call__number {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  transition: color 0.25s ease;
+}
+.header-call:hover .header-call__number {
+  color: var(--amber-deep);
+}
+.header-call__icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  font-size: 1.15rem;
+  color: var(--ink);
+  background: var(--amber);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.header-call__icon:hover {
+  background: var(--amber-bright);
+  transform: translateY(-2px) rotate(-8deg);
+}
+
+/* ===================== Responsive ===================== */
+@media screen and (max-width: 980px) {
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  #primary-nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 0.6rem;
+  }
+  #navbar-items {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #navbar-contact {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #logo { height: 62px; }
+  .header-call__label { display: none; }
+  .header-call__number { font-size: 1rem; }
+  .nav-link {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+  .nav-link::after { left: 0.7rem; right: 0.7rem; }
+  .nav-link--cta { padding: 0.55rem 1rem; }
+}
+
+@media screen and (max-width: 380px) {
+  .header-call__text { display: none; }
 }

@@ -26,17 +26,13 @@ export default function Carousel() {
               <p>
               An optimized structural product engineered for quality. A product that is gaining widespread use. It has high strength, high stiffness, and dimensional stability. LSL floor panels are fastened to glulam purlins and steel beams. Available in 1.35E and 1.55E.
               </p>
-              <Link to="/contact">
-                <button className="buy-now button1">
-                  <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">Buy Now</span>
-                </button>
+              <Link to="/contact" className="btn carousel-btn">
+                Buy Now
+                <span className="btn-arrow" aria-hidden="true">→</span>
               </Link>
             </div>
             <div className="product-right-side-container">
-              <img className="right-side-product-image" src={LSL} />
+              <img className="right-side-product-image" src={LSL} alt="EWP / LSL engineered lumber" />
             </div>
           </div>
         </SwiperSlide>
@@ -50,17 +46,13 @@ export default function Carousel() {
               <p>Thickness: 7/16, 19/32, 23,/32</p>
               <p>Lengths: 6', 8'</p>
               <p>Widths: 4', 8'</p>
-              <Link to="/contact">
-                <button className="buy-now button1">
-                  <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">Buy Now</span>
-                </button>
+              <Link to="/contact" className="btn carousel-btn">
+                Buy Now
+                <span className="btn-arrow" aria-hidden="true">→</span>
               </Link>
             </div>
             <div className="product-right-side-container">
-              <img className="right-side-product-image" src={OSB} />
+              <img className="right-side-product-image" src={OSB} alt="OSB panel" />
             </div>
           </div>
         </SwiperSlide>
@@ -80,17 +72,13 @@ export default function Carousel() {
                 </ul>
               </p>
               <p>Dimension: 4 ply, 1/2"</p>
-              <Link to="/contact">
-                <button className="buy-now button1">
-                  <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">Buy Now</span>
-                </button>
+              <Link to="/contact" className="btn carousel-btn">
+                Buy Now
+                <span className="btn-arrow" aria-hidden="true">→</span>
               </Link>
             </div>
             <div className="product-right-side-container">
-              <img className="right-side-product-image" src={Plywood} />
+              <img className="right-side-product-image" src={Plywood} alt="Plywood sheets" />
             </div>
           </div>
         </SwiperSlide>
@@ -101,17 +89,13 @@ export default function Carousel() {
               <p>
               Used extensively in residential floor and roof framing. They are ideal for long spans, including continuous spans over intermediate supports. Because I-joists are straight and true, it's easier for builders to avoid crowning and maintain a level framing surface.
               </p>
-              <Link to="/contact">
-                <button className="buy-now button1">
-                  <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">Buy Now</span>
-                </button>
+              <Link to="/contact" className="btn carousel-btn">
+                Buy Now
+                <span className="btn-arrow" aria-hidden="true">→</span>
               </Link>
             </div>
             <div className="product-right-side-container">
-              <img className="right-side-product-image" src={IJoists} />
+              <img className="right-side-product-image" src={IJoists} alt="I-joists" />
             </div>
           </div>
         </SwiperSlide>
@@ -123,17 +107,13 @@ export default function Carousel() {
                 Laminated veneer lumber is an engineered wood product that uses
                 multiple layers of thin wood assembled with adhesives.
               </p>
-              <Link to="/contact">
-                <button className="buy-now button1">
-                  <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">Buy Now</span>
-                </button>
+              <Link to="/contact" className="btn carousel-btn">
+                Buy Now
+                <span className="btn-arrow" aria-hidden="true">→</span>
               </Link>
             </div>
             <div className="product-right-side-container">
-              <img className="right-side-product-image" src={LVL} />
+              <img className="right-side-product-image" src={LVL} alt="Laminated veneer lumber (LVL)" />
             </div>
           </div>
         </SwiperSlide>
@@ -146,17 +126,13 @@ export default function Carousel() {
                 needs.
               </p>
               <p>2 x 4" - 2 x 12" and 8-20"</p>
-              <Link to="/contact">
-                <button className="buy-now button1">
-                  <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">Buy Now</span>
-                </button>
+              <Link to="/contact" className="btn carousel-btn">
+                Buy Now
+                <span className="btn-arrow" aria-hidden="true">→</span>
               </Link>
             </div>
             <div className="product-right-side-container">
-              <img className="right-side-product-image" src={Lumber} />
+              <img className="right-side-product-image" src={Lumber} alt="Dimensional lumber" />
             </div>
           </div>
         </SwiperSlide>
