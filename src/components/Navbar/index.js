@@ -33,16 +33,16 @@ function NavBar() {
         </nav>
 
         <div id="navbar-contact">
-          <a className="header-call" href="tel:7205390461">
+          <a className="header-call" href="tel:7202194554">
             <span className="header-call__text">
               <span className="header-call__label">Call Us Today</span>
-              <span className="header-call__number">(720) 539-0461</span>
+              <span className="header-call__number">(720) 219-4554</span>
             </span>
           </a>
           <a
             className="header-call__icon"
-            href="tel:7207561299"
-            aria-label="Call (720) 756-1299"
+            href="tel:7202194554"
+            aria-label="Call (720) 219-4554"
           >
             <PhoneInTalkIcon fontSize="inherit" />
           </a>

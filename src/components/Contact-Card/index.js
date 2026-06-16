@@ -29,9 +29,9 @@ function ContactCard() {
               </a>
             </li>
             <li>
-              <a href="tel:7205390461">
+              <a href="tel:7202194554">
                 <span className="contact-card__icon"><PhoneInTalkIcon fontSize="inherit" /></span>
-                <span>(720) 539-0461</span>
+                <span>(720) 219-4554</span>
               </a>
             </li>
           </ul>

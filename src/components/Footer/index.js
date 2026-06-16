@@ -99,8 +99,8 @@ function Footer() {
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <p>© {new Date().getFullYear()} CBS-Lumber. All rights reserved.</p>
-          <a href="tel:7205390461" className="footer__bottom-call">
-            (720) 539-0461
+          <a href="tel:7202194554" className="footer__bottom-call">
+            (720) 219-4554
           </a>
         </div>
       </div>

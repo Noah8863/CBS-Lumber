@@ -75,11 +75,11 @@ function Contact() {
               your lumber needs.
             </p>
             <div className="contact-direct">
-              <a id="contact-phone-number" href="tel:7207561299">
+              <a id="contact-phone-number" href="tel:7202194554">
                 <span className="contact-direct__icon">
                   <PhoneInTalkIcon fontSize="inherit" />
                 </span>
-                (720) 756-1299
+                (720) 219-4554
               </a>
               <a href="mailto:info@cbs-lumber.com">
                 <span className="contact-direct__icon">
