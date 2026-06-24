@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
-import CabinIcon from "@mui/icons-material/Cabin";
 import PlaceIcon from "@mui/icons-material/Place";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import footerLogo from "../../images/CBSL-Footer-logo-white.png";
@@ -16,18 +14,6 @@ function Footer() {
       link: "https://www.facebook.com/ColoradoBuildingSolutions",
       id: "facebook",
       icon: () => <FacebookIcon />,
-    },
-    {
-      name: "Instagram",
-      link: "https://www.instagram.com/cobuildingsolutions/",
-      id: "instagram",
-      icon: () => <InstagramIcon />,
-    },
-    {
-      name: "CBS",
-      link: "http://coloradobuildingsolutions.com",
-      id: "cbs-lumber",
-      icon: () => <CabinIcon />,
     },
     {
       name: "Nova",

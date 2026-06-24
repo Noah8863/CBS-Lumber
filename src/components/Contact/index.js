@@ -20,28 +20,27 @@ function Contact() {
     var today = new Date().toLocaleDateString();
 
     e.preventDefault();
+    const selectedProducts = PRODUCTS.filter(
+      (p) => document.getElementById(p.id).checked
+    ).map((p) => p.label);
     const formData = {
       time: today,
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
       phoneNumber: document.getElementById("phoneNumber").value,
-      lumber: document.getElementById("lumber").checked ? "Yes ✅" : "No ❌",
-      plywood: document.getElementById("plywood").checked ? "Yes ✅" : "No ❌",
-      osb: document.getElementById("osb").checked ? "Yes ✅" : "No ❌",
-      lsl: document.getElementById("lsl").checked ? "Yes ✅" : "No ❌",
-      lvl: document.getElementById("lvl").checked ? "Yes ✅" : "No ❌",
-      ijoists: document.getElementById("ijoists").checked ? "Yes ✅" : "No ❌",
-      ewp: document.getElementById("ewp").checked ? "Yes ✅" : "No ❌",
+      products: selectedProducts.length
+        ? selectedProducts.join(", ")
+        : "None specified",
       subject: document.getElementById("subject").value,
       message: document.getElementById("message").value,
     };
     console.log(formData);
     emailjs
       .send(
-        "service_yctb6c8",
-        "template_s77x9a4",
+        "service_bzzonzc",
+        "template_omj9j7y",
         formData,
-        "nIOQ4DjOD6VPrQRy0"
+        "7cmnH8SYBduW7gadl"
       )
       .then(
         (result) => {
