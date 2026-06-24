@@ -81,11 +81,11 @@ function Contact() {
                 </span>
                 (720) 219-4554
               </a>
-              <a href="mailto:info@cbs-lumber.com">
+              <a href="mailto:customer-service@cbs-lumber.info">
                 <span className="contact-direct__icon">
                   <EmailIcon fontSize="inherit" />
                 </span>
-                Info@CBS-Lumber.com
+                customer-service@cbs-lumber.info
               </a>
             </div>
           </div>

@@ -23,9 +23,9 @@ function ContactCard() {
               <span>www.CBS-Lumber.com</span>
             </li>
             <li>
-              <a href="mailto:info@cbs-lumber.com">
+              <a href="mailto:customer-service@cbs-lumber.info">
                 <span className="contact-card__icon"><EmailIcon fontSize="inherit" /></span>
-                <span>info@CBS-Lumber.com</span>
+                <span>customer-service@cbs-lumber.info</span>
               </a>
             </li>
             <li>
