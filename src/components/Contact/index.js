@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.scss";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import emailjs from "@emailjs/browser";
 import Certification from "../Certification/index";
 
@@ -16,10 +18,14 @@ const PRODUCTS = [
 ];
 
 function Contact() {
-  const sendEmail = (e) => {
-    var today = new Date().toLocaleDateString();
+  // "idle" | "sending" | "success" | "error"
+  const [status, setStatus] = useState("idle");
 
+  const sendEmail = (e) => {
     e.preventDefault();
+    const form = e.target;
+    const today = new Date().toLocaleDateString();
+
     const selectedProducts = PRODUCTS.filter(
       (p) => document.getElementById(p.id).checked
     ).map((p) => p.label);
@@ -34,27 +40,23 @@ function Contact() {
       subject: document.getElementById("subject").value,
       message: document.getElementById("message").value,
     };
-    console.log(formData);
+
+    setStatus("sending");
     emailjs
-      .send(
-        "service_bzzonzc",
-        "template_omj9j7y",
-        formData,
-        "7cmnH8SYBduW7gadl"
-      )
+      .send("service_bzzonzc", "template_omj9j7y", formData, "7cmnH8SYBduW7gadl")
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setStatus("success");
+          form.reset();
         },
         (error) => {
-          console.log(error.text);
+          console.error(error);
+          setStatus("error");
         }
       );
   };
 
-  function showMessage() {
-    alert("Message has been recorded! We'll get in touch soon");
-  }
+  const closeModal = () => setStatus("idle");
 
   return (
     <>
@@ -131,13 +133,67 @@ function Contact() {
               <textarea className="inputfield" id="message" rows="4" placeholder="Tell us about your project, quantities, and timeline" required></textarea>
             </div>
 
-            <button id="btn" className="bubbly-button" onClick={showMessage}>
-              Submit Request
+            <button
+              id="btn"
+              type="submit"
+              className="bubbly-button"
+              disabled={status === "sending"}
+            >
+              {status === "sending" ? "Sending…" : "Submit Request"}
             </button>
           </form>
         </div>
       </section>
       <Certification />
+
+      {status !== "idle" && (
+        <div
+          className="contact-modal-overlay"
+          onClick={status === "sending" ? undefined : closeModal}
+        >
+          <div
+            className="contact-modal"
+            role="dialog"
+            aria-modal="true"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {status === "sending" && (
+              <>
+                <div className="contact-modal__spinner" aria-hidden="true"></div>
+                <h3 className="contact-modal__title">Sending your request…</h3>
+                <p className="contact-modal__text">This will only take a moment.</p>
+              </>
+            )}
+
+            {status === "success" && (
+              <>
+                <CheckCircleIcon className="contact-modal__icon contact-modal__icon--success" />
+                <h3 className="contact-modal__title">Request sent!</h3>
+                <p className="contact-modal__text">
+                  Thanks for reaching out — we'll get back to you soon.
+                </p>
+                <button className="contact-modal__btn" onClick={closeModal}>
+                  Close
+                </button>
+              </>
+            )}
+
+            {status === "error" && (
+              <>
+                <ErrorOutlineIcon className="contact-modal__icon contact-modal__icon--error" />
+                <h3 className="contact-modal__title">Something went wrong</h3>
+                <p className="contact-modal__text">
+                  Your request couldn't be sent. Please try again, or call us at
+                  (720) 219-4554.
+                </p>
+                <button className="contact-modal__btn" onClick={closeModal}>
+                  Close
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </>
   );
 }
