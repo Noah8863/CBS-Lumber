@@ -67,8 +67,8 @@
   flex-shrink: 0;
   font-size: 1.25rem;
   color: var(--amber-bright);
-  background: rgba(207, 122, 44, 0.16);
-  border: 1px solid rgba(207, 122, 44, 0.35);
+  background: rgba(8, 88, 200, 0.16);
+  border: 1px solid rgba(8, 88, 200, 0.35);
   border-radius: 50%;
 }
 
@@ -126,7 +126,7 @@ textarea.inputfield {
 .inputfield::placeholder { color: #a99c89; }
 .inputfield:focus {
   border-color: var(--amber);
-  box-shadow: 0 0 0 3px rgba(207, 122, 44, 0.16);
+  box-shadow: 0 0 0 3px rgba(8, 88, 200, 0.16);
 }
 
 /* ---- Product chips ---- */
@@ -179,7 +179,7 @@ textarea.inputfield {
   color: #fff;
 }
 .chip input:focus-visible + span {
-  box-shadow: 0 0 0 3px rgba(207, 122, 44, 0.3);
+  box-shadow: 0 0 0 3px rgba(8, 88, 200, 0.3);
 }
 
 /* ---- Submit button ---- */
@@ -273,17 +273,17 @@ textarea.inputfield {
   font-size: 0.95rem;
   font-weight: 600;
   color: #fff;
-  background: #cf7a2c;
+  background: #0858c8;
   transition: background 0.15s ease;
 }
-.contact-modal__btn:hover { background: #a85f1d; }
+.contact-modal__btn:hover { background: #06409a; }
 
 .contact-modal__spinner {
   width: 46px;
   height: 46px;
   margin: 0 auto;
   border: 4px solid #e9ddc8;
-  border-top-color: #cf7a2c;
+  border-top-color: #0858c8;
   border-radius: 50%;
   animation: contact-modal-spin 0.8s linear infinite;
 }

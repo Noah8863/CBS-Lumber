@@ -64,7 +64,7 @@
 /* ===================== STATS STRIP ===================== */
 .stats-strip {
   background: var(--band);
-  border-top: 3px solid var(--amber);
+  border-top: 3px solid var(--tan);
   border-bottom: 1px solid var(--line);
 }
 .stats-strip__inner {
@@ -95,11 +95,11 @@
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 4vw, 2.7rem);
   line-height: 1;
-  color: var(--amber-deep);
+  color: var(--ink);
   letter-spacing: 0.02em;
 }
 .stat__amp {
-  color: var(--text-muted);
+  color: var(--ink);
   margin: 0 0.15em;
   font-size: 0.7em;
 }
@@ -108,7 +108,7 @@
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--ink);
 }
 
 /* ===================== ABOUT SECTIONS ===================== */

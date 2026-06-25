@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import Plywood from '../../images/plywood.jpg'
 import LSL from "../../images/LSL-Product-Image.jpg";
 import OSB from "../../images/OSB-Product-Image.jpg";
@@ -18,7 +18,14 @@ export default function Carousel() {
   return (
     <>
       {/* Future option to have a carousel.  */}
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper
+        navigation={true}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+        loop={true}
+        modules={[Navigation, Pagination, Autoplay]}
+        className="mySwiper"
+      >
         <SwiperSlide className="swiper-pictures">
           <div className="product-swiper-container">
             <div className="product-left-side-container">

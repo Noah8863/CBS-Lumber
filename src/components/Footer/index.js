@@ -25,7 +25,6 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="hazard-bar" aria-hidden="true"></div>
       <div className="container footer__top">
         <div className="footer__brand">
           <img src={footerLogo} id="footerLogo" alt="CBS-Lumber" />

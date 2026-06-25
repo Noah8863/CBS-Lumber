@@ -13,9 +13,9 @@
   --paper-2: #fbf7f0;      /* card surface */
   --paper-3: #ffffff;
   --band: #e9ddc8;         /* deeper beige — section bands */
-  --amber: #cf7a2c;        /* timber amber — primary accent */
-  --amber-bright: #e89544; /* hover / highlight */
-  --amber-deep: #a85f1d;
+  --amber: #0858c8;        /* CBS brand blue — primary accent */
+  --amber-bright: #2f74e0; /* hover / highlight */
+  --amber-deep: #06409a;
   --tan: #c9a877;          /* sawdust tan — secondary */
   --line: rgba(24, 20, 16, 0.12);
   --line-strong: rgba(24, 20, 16, 0.22);
@@ -40,7 +40,7 @@
   --shadow-sm: 0 1px 2px rgba(24, 20, 16, 0.06), 0 2px 8px rgba(24, 20, 16, 0.05);
   --shadow-md: 0 6px 18px rgba(24, 20, 16, 0.10), 0 2px 6px rgba(24, 20, 16, 0.06);
   --shadow-lg: 0 18px 48px rgba(24, 20, 16, 0.18);
-  --shadow-amber: 0 10px 30px rgba(207, 122, 44, 0.28);
+  --shadow-amber: 0 10px 30px rgba(8, 88, 200, 0.28);
 }
 
 * { box-sizing: border-box; }
@@ -110,7 +110,8 @@ p { margin: 0; }
   height: 3px;
   background: var(--amber);
 }
-.kicker--light { color: var(--amber-bright); }
+.kicker--light { color: #fff; }
+.kicker--light::before { background: #fff; }
 .kicker--center { justify-content: center; }
 
 /* ---------- Section heading ---------- */
@@ -120,18 +121,6 @@ p { margin: 0; }
   color: var(--ink);
 }
 .section-title--light { color: var(--paper-2); }
-
-/* ---------- Hazard-stripe divider (construction motif) ---------- */
-.hazard-bar {
-  height: 10px;
-  width: 100%;
-  background: repeating-linear-gradient(
-    -45deg,
-    var(--amber) 0 18px,
-    var(--ink) 18px 36px
-  );
-  opacity: 0.92;
-}
 
 /* ---------- Buttons ---------- */
 .btn {

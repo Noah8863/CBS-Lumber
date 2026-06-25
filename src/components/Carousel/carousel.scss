@@ -10,7 +10,7 @@
   height: auto;
   display: flex;
   justify-content: center;
-  padding: 1.25rem 0.25rem 3rem;
+  padding: 1.25rem 0.25rem 1.5rem;
   box-sizing: border-box;
 }
 
@@ -107,6 +107,33 @@
 .swiper-button-prev::after {
   font-size: 1.05rem;
   font-weight: 700;
+}
+
+/* ---- Pagination dots (tap targets, shown on all sizes) ---- */
+.swiper-pagination {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  margin-top: 0.25rem;
+}
+.swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  margin: 0 !important;
+  background: rgba(24, 20, 16, 0.25);
+  opacity: 1;
+  transition: background-color 0.25s ease, width 0.25s ease;
+}
+.swiper-pagination-bullet:hover {
+  background: rgba(24, 20, 16, 0.45);
+}
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet-active:hover {
+  width: 30px;
+  border-radius: 6px;
+  background: var(--amber);
 }
 
 /* ===================== Responsive ===================== */
