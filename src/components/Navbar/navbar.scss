@@ -21,7 +21,7 @@
 }
 #logo {
   width: auto;
-  height: 82px;
+  height: 123px;
   transition: transform 0.3s ease;
 }
 #logo-link:hover #logo {
@@ -174,7 +174,7 @@
 }
 
 @media screen and (max-width: 560px) {
-  #logo { height: 62px; }
+  #logo { height: 93px; }
   .header-call__label { display: none; }
   .header-call__number { font-size: 1rem; }
   .nav-link {
